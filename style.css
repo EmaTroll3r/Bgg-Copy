@@ -6,8 +6,8 @@ body{
 
 @font-face{
     font-family: proxima-nova;
-    /* src: url('font/ProximaNova-Regular.ttf'); */
-    src: url('font/ProximaNova-Bold.otf');
+    /* src: url('fonts/ProximaNova-Regular.ttf'); */
+    src: url('fonts/ProximaNova-Bold.otf');
 }
 
 nav{
