@@ -1,61 +1,81 @@
 article{
-    padding-left: 35px;
-    padding-right: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #fff;
+    
+    margin-top: calc(20px + 50px);      /* 20px + nav height */
+    margin-left: 15px;
+    margin-right: 15px;
+
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-#explore-section-content{
-    display: flex;
-    margin-top: 25px;
+/*
+#home-explore-title-container{
+    position: fixed;
+    background-color: #fff;
+    width: calc(100% - 100px);
+}
+/*  implementato ma non mi piaceva esteticamente   */
+
+#home-explore-section{
     margin-bottom: 25px;
 }
 
-#explore-title{
+#home-explore-section-content{
+    display: flex;
+    /* margin-top: calc(25px + 53px);      /* 25px + explore title height  per explore-title-fixed*/
+    margin: 25px 10px;
+}
+
+#home-explore-title{
     display: flex;
     justify-content: space-around;
     margin-right: 25px;
     justify-content: flex-start;
 }
 
-#explore-hr{
+#home-explore-hr{
     margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-#explore-title div{
+#home-explore-title div{
     font-size: 1.15rem;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-top: 8px;
 
+    padding: 8px 16px;
     
-    margin-top: 0px;
-    margin-bottom: 0px;
+    margin: 0px 10px;
 }
 
-
-
-#explore-main-container{
+#home-explore-main-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-top: 10px;
     width: 60%;
 }
 
-#explore-main-container img {
+#home-explore-main-container img {
     width: 100%;
     border-radius: 10px;
 }
 
 
 /*
-#explore-main-container:hover{
+#home-explore-main-container:hover{
     cursor: pointer;
     filter: brightness(0.85);
 }
 */
 
 
-#explore-articles-container{
+#home-explore-articles-container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -63,18 +83,18 @@ article{
     flex-grow: 1;
 }
 
-.explore-articles-item{
+.home-explore-articles-item{
     display: flex;
     align-items: center;
 }
 
-.explore-articles-item img{
+.home-explore-articles-item img{
     height: 100px;
     width: 100px;
     border-radius: 10px;
 }
 
-.explore-articles-item-text{
+.home-explore-articles-item-text{
     display: flex;
     margin-left: 25px;
     height: 40px;
@@ -82,27 +102,84 @@ article{
     justify-content: space-between;
 }
 
-.explore-articles-item-author{
+.home-explore-articles-item-author{
     font-size: 0.8rem;
     font-family: proxima-nova-regular, Arial, sans-serif;
     color: var(--text-color-secondary);
 }
 
-.explore-articles-item-hr {
+.home-explore-articles-item-hr {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
 /*
-.explore-articles-item:hover{
+.home-explore-articles-item:hover{
     cursor: pointer;
     filter: brightness(0.85);
 }
 */
 
-.section-hr{
-    width: calc(100% + 70px);
-    margin-left: -35px;
-    margin-top: 25px;
+.home-section-hr{
+    width: calc(100% + 50px);
+    margin-left: -25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.home-section{
+    display: block;             
+    width: 100%;
+    padding: 28px 0px;
+}
+
+.home-section-header{
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.home-section-title{
+    font-size: 1.25rem;
+}
+
+.home-section-description{
+    font-family: proxima-nova-regular, Arial, sans-serif;
+    color: var(--text-color-secondary);
+    margin-top: 4px;
+}
+
+.home-section-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.home-section-item{
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.home-section-item img{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.home-section-item-text{
+    margin-top: 10px;
+}
+
+.home-section-item-description{
+    font-family: proxima-nova-regular, Arial, sans-serif;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+.home-section-item-info{
+    font-family: proxima-nova-regular, Arial, sans-serif;
+    color: var(--text-color-secondary);
+    margin-top: 5px;
 }
