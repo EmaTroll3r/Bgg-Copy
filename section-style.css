@@ -205,17 +205,20 @@ article{
 
 .home-split-screen{
     display: flex;
+    width: 100%;
     margin-top: -28px;
 }
 
 .vertical-hr{
     display: flex;
-    flex-grow: 1;
+    width: 0px;
     margin: 0px 20px;
 }
 
 .home-split-container{
     display: flex;
+    flex-grow: 1;
+    height: 300px;
     border: 1px solid black;
 }
 
