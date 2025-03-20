@@ -27,3 +27,16 @@ hr{
     font-family: proxima-nova-regular;
     src: url('fonts/ProximaNova-Regular.ttf');
 }
+
+
+/* tag a */
+a{
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+}
+
+a:hover{
+    color: #007bff;
+    text-decoration: underline;
+}

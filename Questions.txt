@@ -1,5 +1,6 @@
 Va bene il sito di https://boardgamegeek.com
 Come comportarmi con feature non studiate?
+Immagini per la nav?
 SideBar?
 Vanno bene i font scaricati?
 Vanno bene le immagini in locale?
@@ -7,7 +8,7 @@ Posso rimuovere la sottolineatura dai link?
 Sono ammesse delle "licenze poetiche"?
 Come gestire il fatto che gli .home-section-item escano fuori dalla pagina?
 Dove usare Header nel mio progetto?
-è un problema se non includo line-height?
+è un problema se non includo line-height, overlay?
 Linee commentate
 Posso far generare articoli e contenuti all'AI?
 
