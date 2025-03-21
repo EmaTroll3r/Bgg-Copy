@@ -28,11 +28,10 @@ hr{
     src: url('fonts/ProximaNova-Regular.ttf');
 }
 
-
-/* tag a */
 a{
+    display: flex;
     text-decoration: none;
-    color: black;
+    color: inherit;
     background-color: transparent;
 }
 
