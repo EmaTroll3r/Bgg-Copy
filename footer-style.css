@@ -1,0 +1,40 @@
+
+#footer-main{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #3f3a60;
+    color: #fff;
+    padding: 40px 16px;
+}
+
+.footer-container{
+    width: 25%;
+}
+
+.footer-title{
+    font-family: proxima-nova-bold, Arial, sans-serif;
+    color: #cfcdd7;
+    margin-bottom: 14px;
+    font-size: 0.875rem;
+}
+
+.footer-content a{
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-content a:hover{
+    text-decoration: underline;
+}
+
+#footer-legalNotice{
+    font-size: 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #100f18;
+    color: #cfcdd7;
+    padding: 14px;
+    font-weight: 550;
+}

@@ -5,37 +5,69 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav-style.css">
-        <link rel="stylesheet" href="section-style.css">
+        <link rel="stylesheet" href="article-style.css">
+        <link rel="stylesheet" href="footer-style.css">
+        <link rel="stylesheet" href="media-query.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="https://cf.geekdo-static.com/icons/favicon2.ico" type="image/ico">
     </head>
     <body>
         <nav>
-            <div id="nav-menu-container">
-                <div class="nav-item">
-                    <i class="fas fa-bars"></i>
+            <div class="nav-side-container">
+                <div id="nav-menu-container">
+                    <div class="nav-item item">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div id="nav-logo-container">
+                    <img src="https://cf.geekdo-static.com/images/logos/navbar-logo-bgg-b2.svg" alt="Board Game Geek Logo">
+                </div>
+                <div id="nav-links-container">
+                    <div class="nav-item">Browse
+                        <div class="nav-submenu">
+                            <div class="nav-submenu-content">
+                                <div class="nav-submenu-column">
+                                    <div class="nav-submenu-item"><a href="#">All BoardGames</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Categories</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Artists</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Publishers</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Honors</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Gone Cardboard</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Recent Additions</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Previews</a></div>
+                                </div>
+                                <div class="nav-submenu-column">
+                                    <div class="nav-submenu-item"><a href="#">Families</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Mechanics</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Designers</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Accessories</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Random Game</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Podcasts</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Wiki</a></div>
+                                    <div class="nav-submenu-item"><a href="#">Hall of Fame</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">Forums</div>
+                    <div class="nav-item">Geeklists</div>
+                    <div class="nav-item">Shopping</div>
+                    <div class="nav-item">Community</div>
+                    <div class="nav-item">Help</div>
                 </div>
             </div>
-            <div id="nav-logo-container">
-                <img src="https://cf.geekdo-static.com/images/logos/navbar-logo-bgg-b2.svg" alt="Board Game Geek Logo">
-            </div>
-            <div id="nav-links-container">
-                <div class="nav-item">Browse</div>
-                <div class="nav-item">Forums</div>
-                <div class="nav-item">Geeklists</div>
-                <div class="nav-item">Shopping</div>
-                <div class="nav-item">Community</div>
-                <div class="nav-item">Help</div>
-            </div>
-            
-            <div id="nav-user-content-container">
-                <div class="nav-item">Mail</div>
-                <div class="nav-item">Notf</div>
-                <div id="UserName" class="nav-item">EmaTroll3r</div>
-            </div>
-            
-            <div id="nav-search-container">
-                <input type="text" id="search" placeholder="Search">     
-                <i class="fas fa-search"></i>
+
+            <div class="nav-side-container">
+                <div id="nav-user-container">
+                    <i class="fa-solid fa-envelope nav-icon"></i>
+                    <i class="fa-solid fa-bullhorn nav-icon"></i>
+                    <div id="UserName" class="nav-item">EmaTroll3r</div>
+                </div>
+                
+                <div id="nav-search-container">
+                    <input type="text" id="search" placeholder="Search">     
+                    <i class="fas fa-search"></i>
+                </div>
             </div>
         </nav>
 
@@ -52,49 +84,51 @@
                     <div id="home-explore-main-container">
                         <!-- <img src="https://cf.geekdo-images.com/JUAUWaVUzeBgzirhZNmHHw__opengraph/img/lnl-mnvbEge_7gtTD-sCxoI5NhY=/0x170:2048x1245/fit-in/1200x630/filters:strip_icc()/pic4254509.jpg" alt="Root"> -->
                         <img src="https://cf.geekdo-images.com/7k_nOxpO9OGIjhLq2BUZdA__opengraph/img/10P2KjknnofwYAqlJkBUXpz0I40=/0x0:4259x2236/fit-in/1200x630/filters:strip_icc()/pic3163924.jpg" alt="Scythe">
-                        <div id="home-explore-main-text">
-                            <a id="home-explore-main-title">Scythe: One of the best worker placement games</a>
-                            <div id="home-explore-main-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
+                        <div id="home-explore-main-text" class="item">
+                            <div id="home-explore-main-title" class="item-title">Scythe: One of the best worker placement games ever</div>
+                            <div id="home-explore-main-author" class="item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
                         </div>
                     </div>
 
+                    <hr id="home-explore-sperator-hr">
+
                     <div id="home-explore-articles-container">
 
-                        <div class="home-explore-articles-item">
+                        <div class="home-explore-articles-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-explore-articles-item-text">
-                                <div class="home-explore-articles-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-explore-articles-item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
+                                <div class="home-explore-articles-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-explore-articles-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
                             </div>
                         </div>
 
                         <hr class="home-explore-articles-item-hr">
                         
-                        <div class="home-explore-articles-item">
+                        <div class="home-explore-articles-item item">
                             <img src="https://cf.geekdo-images.com/WzNs1mA_o22ZWTR8fkLP2g__imagepage/img/G8mf2eXt4iRho5TL2N5207oQ5lI=/fit-in/900x600/filters:no_upscale():strip_icc()/pic3376065.jpg" alt="7 Wonders Duel">
                             <div class="home-explore-articles-item-text">
-                                <div class="home-explore-articles-item-title">7 Wonders Duel, the best 2 player game!</div>
-                                <div class="home-explore-articles-item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
+                                <div class="home-explore-articles-item-title item-title">7 Wonders Duel, the best 2 player game!</div>
+                                <div class="home-explore-articles-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
                             </div>
                         </div>                        
 
                         <hr class="home-explore-articles-item-hr">
 
-                        <div class="home-explore-articles-item">
+                        <div class="home-explore-articles-item item">
                             <img src="https://play-lh.googleusercontent.com/4wOMK4_-8uVCdSBaYjOZ4ZnUZVxICz_9ipaNaOQ17yO5EnS1WRpz0hGrBZHrbhcu_QuG" alt="Nemesis">
                             <div class="home-explore-articles-item-text">
-                                <div class="home-explore-articles-item-title">Nemesis makes 10 years!</div>
-                                <div class="home-explore-articles-item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
+                                <div class="home-explore-articles-item-title item-title">Nemesis makes 10 years!</div>
+                                <div class="home-explore-articles-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a></div>
                             </div>
                         </div>
 
                         <hr class="home-explore-articles-item-hr">
 
-                        <div class="home-explore-articles-item">
+                        <div class="home-explore-articles-item item">
                             <img src="https://martinfowler.com/articles/brass-brum/brum.png" alt="Brass Birmingham">
                             <div class="home-explore-articles-item-text">
-                                <div class="home-explore-articles-item-title">Brass: Birmingham reachs top of ranking!</div>
-                                <div class="home-explore-articles-item-author">by&nbsp;<a href="#">EmaTroll3r</a></div>
+                                <div class="home-explore-articles-item-title item-title">Brass: Birmingham reachs top of ranking!</div>
+                                <div class="home-explore-articles-item-author item-author">by&nbsp;<a href="#">EmaTroll3r</a></div>
                             </div>
                         </div>
                         
@@ -106,65 +140,49 @@
 
             <section class="home-section" id="hot-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">THE HOTNESS</div>
-                    <div class="home-section-description">Top 50 trending games today</div>
+                    <div class="home-section-title item-title">THE HOTNESS</div>
+                    <div class="home-section-description item-description">Top 50 trending games today</div>
                 </header>
 
                 <div class="home-section-content">
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPUgAlCE-WPAdGoZjMl9lYHY3CbMAzRnXBQ&s" alt="Catan">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">1 - Catan</div>
-                            <div class="home-section-item-description">Trade, build, and settle in this classic strategy game.</div>
+                            <div class="home-section-item-title item-title">1 - Catan</div>
+                            <div class="home-section-item-description item-description">Trade, build, and settle in this classic strategy game.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/aDLg1IfDuNU/maxresdefault.jpg" alt="Ticket to Ride">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">2 - Ticket to Ride</div>
-                            <div class="home-section-item-description">Build train routes across the map to connect cities.</div>
+                            <div class="home-section-item-title item-title">2 - Ticket to Ride</div>
+                            <div class="home-section-item-description item-description">Build train routes across the map to connect cities.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/598810/capsule_616x353.jpg?t=1741270649" alt="Carcassonne">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">3 - Carcassonne</div>
-                            <div class="home-section-item-description">Place tiles and claim areas to score points.</div>
+                            <div class="home-section-item-title item-title">3 - Carcassonne</div>
+                            <div class="home-section-item-description item-description">Place tiles and claim areas to score points.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://assets.infinitygamingtable.com/assets/ScreenShots/124/pand1__FitMaxWzY0MCwzNjBd.png" alt="Pandemic">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">4 - Pandemic</div>
-                            <div class="home-section-item-description">Work together to stop global outbreaks of diseases.</div>
+                            <div class="home-section-item-title item-title">4 - Pandemic</div>
+                            <div class="home-section-item-description item-description">Work together to stop global outbreaks of diseases.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/800270/header.jpg?t=1741270803" alt="Terraforming Mars">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">5 - Terraforming Mars</div>
-                            <div class="home-section-item-description">Compete to transform Mars into a habitable planet.</div>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
-                        <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_ExplodingKittens_image1600w.jpg" alt="SETI">
-                        <div class="home-section-item-text">
-                            <div class="home-section-item-title">6 - Exploding Kittens</div>
-                            <div class="home-section-item-description">Ask for favors, attack friends- whatever it takes to avoid exploding!</div>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
-                        <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/10/Gloomhaven-Classes.jpg" alt="Gloomhaven">
-                        <div class="home-section-item-text">
-                            <div class="home-section-item-title">7 - Gloomhaven</div>
-                            <div class="home-section-item-description">Embark on epic adventures in this cooperative game.</div>
+                            <div class="home-section-item-title item-title">5 - Terraforming Mars</div>
+                            <div class="home-section-item-description item-description">Compete to transform Mars into a habitable planet.</div>
                         </div>
                     </div>
 
@@ -175,78 +193,58 @@
 
             <section class="home-section" id="crowdfunding-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">CROWDFUNDING COUNTDOWN</div>
-                    <div class="home-section-description">Projects ending soon</div>
+                    <div class="home-section-title item-title">CROWDFUNDING COUNTDOWN</div>
+                    <div class="home-section-description item-description">Projects ending soon</div>
                 </header>
 
                 <div class="home-section-content">
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1054490/362b7cf5b74fceff3f51ce7eaae3c9110d00a383/capsule_616x353.jpg?t=1741339866" alt="Wingspan">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">1 - Wingspan</div>
+                            <div class="home-section-item-title item-title">1 - Wingspan</div>
                             <div class="home-section-item-info">Ends 30 March</div>
-                            <div class="home-section-item-description">A competitive bird-collection, engine-building game.</div>
+                            <div class="home-section-item-description item-description">A competitive bird-collection, engine-building game.</div>
                             <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://azure2.wgp-cdn.co.uk/app-table-top-gaming/posts/WhichAzulshouldIbuy.png?&width=1200&height=630&mode=crop&format=webp&webp.quality=40&scale=both" alt="Azul">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">2 - Azul</div>
+                            <div class="home-section-item-title item-title">2 - Azul</div>
                             <div class="home-section-item-info">Ends 2 April</div>
-                            <div class="home-section-item-description">Draft tiles to complete beautiful patterns in this abstract game.</div>
+                            <div class="home-section-item-description item-description">Draft tiles to complete beautiful patterns in this abstract game.</div>
                             <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://www.orderofgamers.com/wordpress/wp-content/uploads/2016/06/scythe.jpg" alt="Scythe">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">3 - Scythe</div>
+                            <div class="home-section-item-title item-title">3 - Scythe</div>
                             <div class="home-section-item-info">Ends 5 April</div>
-                            <div class="home-section-item-description">Lead your faction to victory in a post-apocalyptic world.</div>
+                            <div class="home-section-item-description item-description">Lead your faction to victory in a post-apocalyptic world.</div>
                             <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://img.pastemagazine.com/wp-content/uploads/2022/06/21074637/dominion-card-game-main.jpg" alt="Dominion">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">4 - Dominion</div>
+                            <div class="home-section-item-title item-title">4 - Dominion</div>
                             <div class="home-section-item-info">Ends 8 April</div>
-                            <div class="home-section-item-description">Build your deck and expand your kingdom in this classic game.</div>
+                            <div class="home-section-item-description item-description">Build your deck and expand your kingdom in this classic game.</div>
                             <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://www.celjaded.com/wp-content/uploads/2015/12/CelJaded-Splendor-Board-Game-Review-Banner.jpg" alt="Splendor">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">5 - Splendor</div>
+                            <div class="home-section-item-title item-title">5 - Splendor</div>
                             <div class="home-section-item-info">Ends 10 April</div>
-                            <div class="home-section-item-description">Collect gems and build your wealth in this elegant strategy game.</div>
-                            <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
-                        <img src="https://i.ytimg.com/vi/5Na-NltWncA/maxresdefault.jpg" alt="The Crew">
-                        <div class="home-section-item-text">
-                            <div class="home-section-item-title">6 - The Crew</div>
-                            <div class="home-section-item-info">Ends 12 April</div>
-                            <div class="home-section-item-description">Work together to complete missions in this cooperative trick-taking game.</div>
-                            <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
-                        <img src="https://cf.geekdo-images.com/RDOwMRBnIb3Ehl6GyXj9xg__opengraph/img/qBR6U9r5b69OKV7Lc47g0Q-clJ8=/0x0:600x315/fit-in/1200x630/filters:strip_icc()/pic8669620.jpg" alt="Patchwork">
-                        <div class="home-section-item-text">
-                            <div class="home-section-item-title">7 - Patchwork</div>
-                            <div class="home-section-item-info">Ends 15 April</div>
-                            <div class="home-section-item-description">Compete to create the most beautiful quilt in this two-player game.</div>
+                            <div class="home-section-item-description item-description">Collect gems and build your wealth in this elegant strategy game.</div>
                             <a href="link-esterno" class="home-section-item-outer-link">Visit Project</a>
                         </div>
                     </div>
@@ -258,64 +256,48 @@
 
             <section class="home-section" id="videos-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">FEATURED VIDEOS</div>
+                    <div class="home-section-title item-title">FEATURED VIDEOS</div>
                 </header>
 
                 <div class="home-section-content">
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/47y2NcNgoCE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAQJ_BXxwVRfCrZ78AurDuTFRX8SQ" alt="Top 10 Board Games of 2025">
                         <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">1 - Top 10 Board Games of 2025</a>
+                            <a href="#" class="home-section-item-title item-title">1 - Top 10 Board Games of 2025</a>
                             <div class="home-section-item-info">20 mar</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/3q39jJEBxlw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDotvRF8atzZAU3PF3eyMa6iwoeCg" alt="Ark Nova Review">
                         <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">2 - Ark Nova Playthrough</a>
+                            <a href="#" class="home-section-item-title item-title">2 - Ark Nova Playthrough</a>
                             <div class="home-section-item-info">18 mar</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://b1803394.smushcdn.com/1803394/wp-content/uploads/2023/03/wingspan-strategy-guide-header-990x557.jpg?lossy=1&strip=1&webp=1" alt="Wingspan Strategy Guide">
                         <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">3 - Wingspan Strategy Guide</a>
+                            <a href="#" class="home-section-item-title item-title">3 - Wingspan Strategy Guide</a>
                             <div class="home-section-item-info">10 mar</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/KJ5uSteHhHQ/hqdefault.jpg" alt="Catan Console Edition">
                         <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">4 - Catan Console Edition</a>
+                            <a href="#" class="home-section-item-title item-title">4 - Catan Console Edition</a>
                             <div class="home-section-item-info">8 mar</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://www.missmeeple.it/wp-content/uploads/2017/10/terraformingmars.jpg" alt="Terraforming Mars Expansion Rankings">
                         <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">5 - Terraforming Mars Expansion Rankings</a>
+                            <a href="#" class="home-section-item-title item-title">5 - Terraforming Mars Expansion Rankings</a>
                             <div class="home-section-item-info">12 mar</div>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
-                        <img src="https://elusivemeeple.com/wp-content/uploads/2018/08/img_0625.jpg?w=816" alt="Gloomhaven Gameplay Tips">
-                        <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">6 - Gloomhaven Gameplay Tips</a>
-                            <div class="home-section-item-info">15 mar</div>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
-                        <img src="https://cdn.svc.asmodee.net/production-asmodeeit/uploads/2024/02/Banner-Azul-Tavolo-768x384.png" alt="Azul Beginner's Guide">
-                        <div class="home-section-item-text">
-                            <a href="#" class="home-section-item-title">7 - Azul Beginner's Guide</a>
-                            <div class="home-section-item-info">5 mar</div>
                         </div>
                     </div>
 
@@ -326,67 +308,59 @@
 
             <section class="home-section" id="Bestseller-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">BESTSELLER</div>
-                    <div class="home-section-description">Week of Mar 10-Mar 16</div>
+                    <div class="home-section-title item-title">BESTSELLER</div>
+                    <div class="home-section-description item-description">Week of Mar 10-Mar 16</div>
                 </header>
 
                 <div class="home-section-content">
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__opengraph/img/KtJwilwgxYSN5ODFEXReTm-M8jQ=/0x242:2176x1385/fit-in/1200x630/filters:strip_icc()/pic7398904.jpg" alt="Sky Team">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">1 - Sky Team</div>
-                            <div class="home-section-item-description">A cooperative game where players work together to land planes safely.</div>
+                            <div class="home-section-item-title item-title">1 - Sky Team</div>
+                            <div class="home-section-item-description item-description">A cooperative game where players work together to land planes safely.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/clKFvn2bUUPby62eSmc-ig__opengraph/img/HgFW_nqwz0hynw4cfsrTZmeY4tA=/0x51:640x387/fit-in/1200x630/filters:strip_icc()/pic4757839.png" alt="Bloodborne: The Board Game">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">2 - Bloodborne</div>
-                            <div class="home-section-item-description">Dive into the dark and challenging world of Bloodborne in this strategic board game.</div>
+                            <div class="home-section-item-title item-title">2 - Bloodborne</div>
+                            <div class="home-section-item-description item-description">Dive into the dark and challenging world of Bloodborne in this strategic board game.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/RmZjhy7_6REp8IaXh9Zqwg__opengraph/img/eMLc6_NcS9qHkDSxsP1XW2UGKeM=/0x0:1804x947/fit-in/1200x630/filters:strip_icc()/pic3979527.jpg" alt="Kemet">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">3 - Kemet</div>
-                            <div class="home-section-item-description">Control ancient Egyptian armies and summon mythical powers to dominate the battlefield.</div>
+                            <div class="home-section-item-title item-title">3 - Kemet</div>
+                            <div class="home-section-item-description item-description">Control ancient Egyptian armies and summon mythical powers to dominate the battlefield.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/9MkqsvemLpZElwjZPbyodA__opengraph/img/UpiuABXcgoFsECHiXGLlLVvBkYE=/0x141:2048x1216/fit-in/1200x630/filters:strip_icc()/pic8159039.jpg" alt="Evolversi Male">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">4 - Evolversi Male</div>
-                            <div class="home-section-item-description">Evolve the only way you know how: badly!</div>
+                            <div class="home-section-item-title item-title">4 - Evolversi Male</div>
+                            <div class="home-section-item-description item-description">Evolve the only way you know how: badly!</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/wGALg6g3nHQ/maxresdefault.jpg" alt="Intrighi a Corte">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">5 - Intrighi a Corte</div>
-                            <div class="home-section-item-description">Manipulate and outwit your opponents in this game of courtly intrigue.</div>
+                            <div class="home-section-item-title item-title">5 - Intrighi a Corte</div>
+                            <div class="home-section-item-description item-description">Manipulate and outwit your opponents in this game of courtly intrigue.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
-                        <img src="https://cf.geekdo-images.com/zdagMskTF7wJBPjX74XsRw__mediacard/img/OTmEfmtsErSd1otMsKfvjDMrNgo=/0x0:720x405/288x162/filters:strip_icc()/pic2576399.jpg" alt="7 Wonders Duel">
-                        <div class="home-section-item-text">
-                            <div class="home-section-item-title">6 - 7 Wonders Duel</div>
-                            <div class="home-section-item-description">A two-player version of the classic game, focusing on strategy and civilization building.</div>
-                        </div>
-                    </div>
-
-                    <div class="home-section-item">
+                    <!-- <div class="home-section-item item">
                         <img src="https://i.imgur.com/UIoJ0C7.png" alt="Nemesis">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">7 - Nemesis</div>
-                            <div class="home-section-item-description">Survive the horrors of deep space in this semi-cooperative survival game.</div>
+                            <div class="home-section-item-title item-title">7 - Nemesis</div>
+                            <div class="home-section-item-description item-description">Survive the horrors of deep space in this semi-cooperative survival game.</div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
             </section>
@@ -394,18 +368,18 @@
             <hr class="home-section-hr">
             
             <section class="home-split-screen">
-                <div id="News-split" class="home-split-container">
-                    <div class="home-split-title">BOARD GAMING NEWS</div>
+                <div id="home-news-split" class="home-split-container">
+                    <div class="home-split-title item-title">BOARD GAMING NEWS</div>
                     
                     <div class="home-split-content">
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r
-                                    <div class="home-split-item-likeComments">
-                                        <i class="fa-regular fa-thumbs-up home-split-icon"></i>10
-                                        <i class="fa-regular fa-message home-split-icon"></i>11
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
                                     </div>
                                 </div>
                             </div>
@@ -413,41 +387,61 @@
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -458,60 +452,83 @@
 
                 <hr class="home-split-vertical-hr">
                 
-                <div id="Discussion-split" class="home-split-container">
-                    <div class="home-split-title">HOT DISCUSSION</div>
+                
+                <div id="home-discussion-split" class="home-split-container">
+                    <div class="home-split-title item-title">HOT DISCUSSION</div>
 
                     <div class="home-split-content">
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                         <hr class="home-split-item-hr">
 
-                        <div class="home-split-item">
+                        <div class="home-split-item item">
                             <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
                             <div class="home-split-item-text">
-                                <div class="home-split-item-title">Important about "Play Bologna 2025"</div>
-                                <div class="home-split-item-author">by EmaTroll3r</div>
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-
-                        
-
                     </div>
                 </div>
 
@@ -521,48 +538,48 @@
 
             <section class="home-section" id="Giveway-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">GIVEWAY CONTEST</div>
-                    <div class="home-section-description">Answer questions for a chance to win - Sponsored</div>
+                    <div class="home-section-title item-title">GIVEWAY CONTEST</div>
+                    <div class="home-section-description item-description">Answer questions for a chance to win - Sponsored</div>
                 </header>
 
                 <div class="home-section-content">
-
-                    <div class="home-section-item">
+                    
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__opengraph/img/KtJwilwgxYSN5ODFEXReTm-M8jQ=/0x242:2176x1385/fit-in/1200x630/filters:strip_icc()/pic7398904.jpg" alt="Sky Team">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">1 - Sky Team</div>
+                            <div class="home-section-item-title item-title">1 - Sky Team</div>
                             <div class="home-section-item-info">Bgames - Ends 17 jan</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/clKFvn2bUUPby62eSmc-ig__opengraph/img/HgFW_nqwz0hynw4cfsrTZmeY4tA=/0x51:640x387/fit-in/1200x630/filters:strip_icc()/pic4757839.png" alt="Bloodborne: The Board Game">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">2 - Bloodborne</div>
+                            <div class="home-section-item-title item-title">2 - Bloodborne</div>
                             <div class="home-section-item-info">Bgames - Ends 24 feb</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/RmZjhy7_6REp8IaXh9Zqwg__opengraph/img/eMLc6_NcS9qHkDSxsP1XW2UGKeM=/0x0:1804x947/fit-in/1200x630/filters:strip_icc()/pic3979527.jpg" alt="Kemet">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">3 - Kemet</div>
+                            <div class="home-section-item-title item-title">3 - Kemet</div>
                             <div class="home-section-item-info">Bgames - Ends 23 mar</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/9MkqsvemLpZElwjZPbyodA__opengraph/img/UpiuABXcgoFsECHiXGLlLVvBkYE=/0x141:2048x1216/fit-in/1200x630/filters:strip_icc()/pic8159039.jpg" alt="Evolversi Male">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">4 - Evolversi Male</div>
+                            <div class="home-section-item-title item-title">4 - Evolversi Male</div>
                             <div class="home-section-item-info">Bgames - Ends 11 dec</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/wGALg6g3nHQ/maxresdefault.jpg" alt="Intrighi a Corte">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">5 - Intrighi a Corte</div>
+                            <div class="home-section-item-title item-title">5 - Intrighi a Corte</div>
                             <div class="home-section-item-info">Bgames - Ends 25 feb</div>
                         </div>
                     </div>
@@ -575,49 +592,49 @@
 
             <section class="home-section" id="MostPlayed-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">MOST PLAYED GAMES</div>
-                    <div class="home-section-description">Month of February</div>
+                    <div class="home-section-title item-title">MOST PLAYED GAMES</div>
+                    <div class="home-section-description item-description">Month of February</div>
                 </header>
 
                 <div class="home-section-content">
 
-                    <div class="home-section-item">
-                        <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__opengraph/img/KtJwilwgxYSN5ODFEXReTm-M8jQ=/0x242:2176x1385/fit-in/1200x630/filters:strip_icc()/pic7398904.jpg" alt="Sky Team">
+                    <div class="home-section-item item">
+                        <img src="https://www.nintendo.com/eu/media/images/10_share_images/games_15/nintendo_switch_download_software_1/H2x1_NSwitchDS_ExplodingKittens_image1600w.jpg" alt="SETI">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">1 - Sky Team</div>
-                            <div class="home-section-item-description">A cooperative game where players work together to land planes safely.</div>
+                            <div class="home-section-item-title item-title">1 - Exploding Kittens</div>
+                            <div class="home-section-item-description item-description">Ask for favors, attack friends- whatever it takes to avoid exploding!</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
-                        <img src="https://cf.geekdo-images.com/clKFvn2bUUPby62eSmc-ig__opengraph/img/HgFW_nqwz0hynw4cfsrTZmeY4tA=/0x51:640x387/fit-in/1200x630/filters:strip_icc()/pic4757839.png" alt="Bloodborne: The Board Game">
+                    <div class="home-section-item item">
+                        <img src="https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/10/Gloomhaven-Classes.jpg" alt="Gloomhaven">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">2 - Bloodborne</div>
-                            <div class="home-section-item-description">Dive into the dark and challenging world of Bloodborne in this strategic board game.</div>
+                            <div class="home-section-item-title item-title">2 - Gloomhaven</div>
+                            <div class="home-section-item-description item-description">Embark on epic adventures in this cooperative game.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
-                        <img src="https://cf.geekdo-images.com/RmZjhy7_6REp8IaXh9Zqwg__opengraph/img/eMLc6_NcS9qHkDSxsP1XW2UGKeM=/0x0:1804x947/fit-in/1200x630/filters:strip_icc()/pic3979527.jpg" alt="Kemet">
+                    <div class="home-section-item item">
+                        <img src="https://i.ytimg.com/vi/5Na-NltWncA/maxresdefault.jpg" alt="The Crew">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">3 - Kemet</div>
-                            <div class="home-section-item-description">Control ancient Egyptian armies and summon mythical powers to dominate the battlefield.</div>
+                            <div class="home-section-item-title item-title">6 - The Crew</div>
+                            <div class="home-section-item-description item-description">Work together to complete missions in this cooperative trick-taking game.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
-                        <img src="https://cf.geekdo-images.com/9MkqsvemLpZElwjZPbyodA__opengraph/img/UpiuABXcgoFsECHiXGLlLVvBkYE=/0x141:2048x1216/fit-in/1200x630/filters:strip_icc()/pic8159039.jpg" alt="Evolversi Male">
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/RDOwMRBnIb3Ehl6GyXj9xg__opengraph/img/qBR6U9r5b69OKV7Lc47g0Q-clJ8=/0x0:600x315/fit-in/1200x630/filters:strip_icc()/pic8669620.jpg" alt="Patchwork">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">4 - Evolversi Male</div>
-                            <div class="home-section-item-description">Evolve the only way you know how: badly!</div>
+                            <div class="home-section-item-title item-title">4 - Patchwork</div>
+                            <div class="home-section-item-description item-description">Compete to create the most beautiful quilt in this two-player game.</div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
-                        <img src="https://i.ytimg.com/vi/wGALg6g3nHQ/maxresdefault.jpg" alt="Intrighi a Corte">
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/zdagMskTF7wJBPjX74XsRw__mediacard/img/OTmEfmtsErSd1otMsKfvjDMrNgo=/0x0:720x405/288x162/filters:strip_icc()/pic2576399.jpg" alt="7 Wonders Duel">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">5 - Intrighi a Corte</div>
-                            <div class="home-section-item-description">Manipulate and outwit your opponents in this game of courtly intrigue.</div>
+                            <div class="home-section-item-title item-title">5 - 7 Wonders Duel</div>
+                            <div class="home-section-item-description item-description">A two-player version of the classic game, focusing on strategy and civilization building.</div>
                         </div>
                     </div>
 
@@ -627,51 +644,394 @@
             
             <hr class="home-section-hr">
 
-            <!-- da completare -->
             <section class="home-section" id="DeepReviews-section">
                 <header class="home-section-header">
-                    <div class="home-section-title">HOT IN-DEEP REVIEWS</div>
+                    <div class="home-section-title item-title">HOT IN-DEEP REVIEWS</div>
                 </header>
 
                 <div class="home-section-content">
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__opengraph/img/KtJwilwgxYSN5ODFEXReTm-M8jQ=/0x242:2176x1385/fit-in/1200x630/filters:strip_icc()/pic7398904.jpg" alt="Sky Team">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">1 - Sky Team</div>
-                            <div class="home-section-item-description">A cooperative game where players work together to land planes safely.</div>
+                            <div class="home-section-item-title item-title">1 - Sky Team</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/clKFvn2bUUPby62eSmc-ig__opengraph/img/HgFW_nqwz0hynw4cfsrTZmeY4tA=/0x51:640x387/fit-in/1200x630/filters:strip_icc()/pic4757839.png" alt="Bloodborne: The Board Game">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">2 - Bloodborne</div>
-                            <div class="home-section-item-description">Dive into the dark and challenging world of Bloodborne in this strategic board game.</div>
+                            <div class="home-section-item-title item-title">2 - Bloodborne</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/RmZjhy7_6REp8IaXh9Zqwg__opengraph/img/eMLc6_NcS9qHkDSxsP1XW2UGKeM=/0x0:1804x947/fit-in/1200x630/filters:strip_icc()/pic3979527.jpg" alt="Kemet">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">3 - Kemet</div>
-                            <div class="home-section-item-description">Control ancient Egyptian armies and summon mythical powers to dominate the battlefield.</div>
+                            <div class="home-section-item-title item-title">3 - Kemet</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://cf.geekdo-images.com/9MkqsvemLpZElwjZPbyodA__opengraph/img/UpiuABXcgoFsECHiXGLlLVvBkYE=/0x141:2048x1216/fit-in/1200x630/filters:strip_icc()/pic8159039.jpg" alt="Evolversi Male">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">4 - Evolversi Male</div>
-                            <div class="home-section-item-description">Evolve the only way you know how: badly!</div>
+                            <div class="home-section-item-title item-title">4 - Evolversi Male</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="home-section-item">
+                    <div class="home-section-item item">
                         <img src="https://i.ytimg.com/vi/wGALg6g3nHQ/maxresdefault.jpg" alt="Intrighi a Corte">
                         <div class="home-section-item-text">
-                            <div class="home-section-item-title">5 - Intrighi a Corte</div>
-                            <div class="home-section-item-description">Manipulate and outwit your opponents in this game of courtly intrigue.</div>
+                            <div class="home-section-item-title item-title">5 - Intrighi a Corte</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <hr class="home-section-hr">
+
+            <section class="home-section" id="Geeklist-section">
+                <header class="home-section-header">
+                    <div class="home-section-title item-title">HOT GEEKLIST</div>
+                </header>
+
+                <div class="home-section-content">
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__opengraph/img/KtJwilwgxYSN5ODFEXReTm-M8jQ=/0x242:2176x1385/fit-in/1200x630/filters:strip_icc()/pic7398904.jpg" alt="Sky Team">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">1 - Sky Team</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/clKFvn2bUUPby62eSmc-ig__opengraph/img/HgFW_nqwz0hynw4cfsrTZmeY4tA=/0x51:640x387/fit-in/1200x630/filters:strip_icc()/pic4757839.png" alt="Bloodborne: The Board Game">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">2 - Bloodborne</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/RmZjhy7_6REp8IaXh9Zqwg__opengraph/img/eMLc6_NcS9qHkDSxsP1XW2UGKeM=/0x0:1804x947/fit-in/1200x630/filters:strip_icc()/pic3979527.jpg" alt="Kemet">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">3 - Kemet</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/9MkqsvemLpZElwjZPbyodA__opengraph/img/UpiuABXcgoFsECHiXGLlLVvBkYE=/0x141:2048x1216/fit-in/1200x630/filters:strip_icc()/pic8159039.jpg" alt="Evolversi Male">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">4 - Evolversi Male</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://i.ytimg.com/vi/wGALg6g3nHQ/maxresdefault.jpg" alt="Intrighi a Corte">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">5 - Intrighi a Corte</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            
+            <hr class="home-section-hr">
+            
+            <section class="home-split-screen">
+                <div id="home-blogs-split" class="home-split-container">
+                    <div class="home-split-title item-title">BLOGS</div>
+                    
+                    <div class="home-split-content">
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+                <hr class="home-split-vertical-hr">
+                
+                <div id="home-forums-split" class="home-split-container">
+                    <div class="home-split-title item-title">GAME FORUMS</div>
+
+                    <div class="home-split-content">
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr class="home-split-item-hr">
+
+                        <div class="home-split-item item">
+                            <img src="https://www.play-festival.it/media/play_f/Evolution_-_Sala_Ingellis.png" alt="Play Bologna 2025">
+                            <div class="home-split-item-text">
+                                <div class="home-split-item-title item-title">Important about "Play Bologna 2025"</div>
+                                <div class="home-split-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                    <div class="home-likeComments-icons">
+                                        <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                        <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            
+            <hr class="home-section-hr">
+
+            <section class="home-section" id="hotvideos-section">
+                <header class="home-section-header">
+                    <div class="home-section-title item-title">HOT VIDEOS</div>
+                </header>
+
+                <div class="home-section-content">
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__opengraph/img/KtJwilwgxYSN5ODFEXReTm-M8jQ=/0x242:2176x1385/fit-in/1200x630/filters:strip_icc()/pic7398904.jpg" alt="Sky Team">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">1 - Sky Team</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/clKFvn2bUUPby62eSmc-ig__opengraph/img/HgFW_nqwz0hynw4cfsrTZmeY4tA=/0x51:640x387/fit-in/1200x630/filters:strip_icc()/pic4757839.png" alt="Bloodborne: The Board Game">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">2 - Bloodborne</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/RmZjhy7_6REp8IaXh9Zqwg__opengraph/img/eMLc6_NcS9qHkDSxsP1XW2UGKeM=/0x0:1804x947/fit-in/1200x630/filters:strip_icc()/pic3979527.jpg" alt="Kemet">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">3 - Kemet</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://cf.geekdo-images.com/9MkqsvemLpZElwjZPbyodA__opengraph/img/UpiuABXcgoFsECHiXGLlLVvBkYE=/0x141:2048x1216/fit-in/1200x630/filters:strip_icc()/pic8159039.jpg" alt="Evolversi Male">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">4 - Evolversi Male</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="home-section-item item">
+                        <img src="https://i.ytimg.com/vi/wGALg6g3nHQ/maxresdefault.jpg" alt="Intrighi a Corte">
+                        <div class="home-section-item-text">
+                            <div class="home-section-item-title item-title">5 - Intrighi a Corte</div>
+                            <div class="home-section-item-author item-author">by&nbsp;<a href="#"> EmaTroll3r</a>
+                                <div class="home-likeComments-icons">
+                                    <i class="fa-regular fa-thumbs-up home-likeComments-icon"></i><div class="home-split-number">10</div>
+                                    <i class="fa-regular fa-message home-likeComments-icon"></i><div class="home-split-number">11</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -680,4 +1040,46 @@
             </section>
 
         </article>
+
+        <footer>
+            <div id="footer-main">
+                <div id="footer-logo" class="footer-container">
+                    <div id="footer-image">
+                        <img src="https://cf.geekdo-static.com/images/logos/bgg-primary-logo-reverse.svg" alt="Board Game Geek">
+                    </div>
+                </div>
+                <div id="footer-company" class="footer-container">
+                    <div class="footer-title">COMPANY</div>
+                    <div class="footer-content">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Advertise</a>
+                        <a href="#">Support BGG</a>
+                    </div>
+                </div>
+
+                <div id="footer-policies" class="footer-container">
+                    <div class="footer-title">POLICIES</div>
+                    <div class="footer-content">
+                        <a href="#">Community Guidelines</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Terms</a>
+                        <a href="#">Manage Cookies</a>
+                    </div>
+                </div>
+                
+                <div id="footer-connect" class="footer-container">
+                    <div class="footer-title">CONNECT</div>
+                    <div class="footer-content">
+                        <a href="#">About</a>
+                        <a href="#">Contact</a>
+                        <a href="#">Advertise</a>
+                        <a href="#">Support BGG</a>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-legalNotice">
+                Geekdo, BoardGameGeek, the Geekdo logo, and the BoardGameGeek logo are trademarks of BoardGameGeek, LLC.
+            </div>
+        </footer>
 </html>

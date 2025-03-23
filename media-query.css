@@ -1,0 +1,101 @@
+@media (max-width: 1050px) {
+    #home-explore-section-content{
+        flex-wrap: wrap;
+    }
+
+    #home-explore-sperator-hr{
+        display: flex;
+    }
+
+    #home-explore-main-container{
+        flex-grow: 1;
+    }
+
+    .home-split-vertical-hr{
+        display: flex;
+    }
+
+    #nav-links-container{
+        display: none;
+    }
+
+    .home-split-vertical-hr{
+        width: calc(100% + 70px);
+        margin: 0px -35px;
+    }
+
+    .home-split-screen{
+        flex-wrap: wrap;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #nav-logo-container img{
+        width: 65px;
+    }
+
+    .nav-item{
+        padding: 0px;
+    }
+
+    #nav-menu-container{
+        padding: 0px;
+    }
+
+    /* #nav-links-container{
+        display: none;
+    } */
+
+    #nav-user-container{
+        justify-content: center;
+        width: 50px;
+    }
+
+    #nav-user-container i{
+        margin-right: 10px;
+    }
+
+    #UserName{
+        display: none;
+    }
+
+    #nav-search-container{
+        margin: 0px;
+        flex-basis: 30px;
+        flex-grow: 0;
+    }
+
+    #nav-search-container input{
+        display: none;
+    }
+
+    #nav-search-container i{
+        margin-right: 10px;
+    }
+
+    article {
+        background-color: red;
+        margin: 50px 0px;
+        padding: 10px 15px 20px 15px;
+    }
+
+    #home-explore-section-content{
+        margin-top: 20px;
+    }
+
+    #home-explore-main-container img {
+        width: calc(100% + 30px);
+        border-radius: 10px;
+        margin-left: -15px;
+        border-radius: 0;
+    }
+
+    
+    .home-split-vertical-hr{
+        width: calc(100% + 30px);
+        margin: 0px -15px;
+    }
+}
+    

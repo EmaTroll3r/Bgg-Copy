@@ -3,12 +3,13 @@
     --section-temp-border: 1px solid black;
     --primary-color: #ffffee;
     --text-color-secondary: #585F65;
+    --text-color-third: #878f96;
 }
 
 body{
     margin: 0px;
     background-color: #ecedee;
-    font-family: proxima-nova-bold, Arial, sans-serif;
+    font-family: proxima-nova-regular, Arial, sans-serif;
 }
 
 hr{
