@@ -1,0 +1,46 @@
+#main{
+    display: flex;
+    margin: calc(20px + var(--nav-height)) 15px 20px 15px;
+}
+
+#quickbar{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    height: 1290px;
+    border: 1px solid #000;
+
+    margin-right: 10px;
+}
+
+article{
+    flex-grow: 1;
+}
+
+#game-infoPanel-container img{
+    width: 175px;
+    object-fit: contain;
+    margin-right: 25px;
+}
+
+#game-infoPanel-container{
+    color: white;
+}
+
+#game-infoPanel-container{
+    display: flex;
+    flex-grow: 1;
+    background-color: #000;
+    padding: 15px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+#game-infoPanel-rank{
+    height: 50px;
+}
+
+#game-infoPanel-details{
+    border-top: 1px solid #fff;
+}
+
