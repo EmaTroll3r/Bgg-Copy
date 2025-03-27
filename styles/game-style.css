@@ -9,7 +9,6 @@
     width: 150px;
     height: 1290px;
     border: 1px solid #000;
-
     margin-right: 10px;
 }
 
@@ -38,6 +37,13 @@ article{
 
 #game-infoPanel-rank{
     height: 50px;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+#game-infoPanel-rank .fa-crown{
+    color: orangered;
+    margin-right: 4px;
 }
 
 #game-infoPanel-details{
