@@ -1,6 +1,7 @@
 #main{
     display: flex;
     margin: calc(20px + var(--nav-height)) 15px 20px 15px;
+    --link-color: rgba(255, 255, 255, 0.9);
 }
 
 #quickbar{
@@ -16,29 +17,28 @@ article{
     flex-grow: 1;
 }
 
-#game-infoPanel-container img{
+#game-infoPanel-mainImage{
     width: 175px;
     object-fit: contain;
     margin-right: 25px;
 }
 
 #game-infoPanel-container{
-    color: white;
-}
-
-#game-infoPanel-container{
+    
     display: flex;
     flex-grow: 1;
     background-color: #000;
+    color: white;
     padding: 15px;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
 
 #game-infoPanel-rank{
-    height: 50px;
+    display: flex;
     font-size: 0.75rem;
     text-transform: uppercase;
+    color: var(--link-color);
 }
 
 #game-infoPanel-rank .fa-crown{
@@ -46,7 +46,79 @@ article{
     margin-right: 4px;
 }
 
+#game-infoPanel-rank a{
+    margin-left: 5px;
+}
+
+.game-infoPanel-rank-item{
+    display: flex;
+    margin-left: 10px;
+}
+
 #game-infoPanel-details{
     border-top: 1px solid #fff;
 }
 
+.underlined-link {
+    text-decoration: underline;
+    text-decoration-color: var(--link-color);
+    text-decoration-style: dotted; 
+    text-underline-offset: 4px;
+}
+
+.underlined-link:hover {
+    color: white;
+    text-decoration-color: var(--link-color);
+    text-decoration-style: dotted; 
+    text-underline-offset: 4px;
+}
+
+
+#game-infoPanel-info-container{
+    display: flex;
+    margin-top: 20px;
+}
+
+#game-infoPanel-info-rating-wrapper{
+    position: relative;
+    height: 55px;
+    margin-right: 10px;
+}
+
+#game-infoPanel-info-rating-value{
+    font-size: 1.25rem;
+    font-family: proxima-nova-bold, Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#game-infoPanel-info-rating-hexagon{
+    width: 55px;
+    height: auto;
+}
+
+#game-infoPanel-info-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#game-infoPanel-info-titleAndYear-wrapper{
+    font-family: proxima-nova-bold, Arial, sans-serif;
+    display: flex;
+    align-items: baseline;
+}
+
+#game-infoPanel-info-title{
+    font-size: 1.5rem;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+#game-infoPanel-info-title:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: inherit;
+}

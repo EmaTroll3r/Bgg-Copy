@@ -76,19 +76,39 @@
 
             <article>
                 <div id="game-infoPanel-container">
-                    <img src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__itemrep/img/oaw-LYEIaB20e79Y568JgyHZ5NQ=/fit-in/246x300/filters:strip_icc()/pic7398904.jpg" alt="Sky-Team">
+                    <img id="game-infoPanel-mainImage" src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__itemrep/img/oaw-LYEIaB20e79Y568JgyHZ5NQ=/fit-in/246x300/filters:strip_icc()/pic7398904.jpg" alt="Sky-Team">
                     <div id="game-infoPanel-content">
                         <div id="game-infoPanel-rank">
                             <i class="fa-solid fa-crown"></i>
                             Rankk:
-                            <div id="game-infoPanel-rank-overall">
-                                overall&nbsp;<a id="game-infoPanel-rank-overall-value">37</a>
+                            <div class="game-infoPanel-rank-item">
+                                overall<a href="#" id="game-infoPanel-rank-overall-value" class="underlined-link">37</a>
+                            </div>
+                            <div class="game-infoPanel-rank-item">
+                                thematic<a href="#" id="game-infoPanel-rank-thematic-value" class="underlined-link">16</a>
+                            </div>
+                            <div class="game-infoPanel-rank-item">
+                                family<a href="#" id="game-infoPanel-rank-family-value" class="underlined-link">2</a>
                             </div>
                         </div>
-                        <div id="game-infoPanel-info">INFO</div>
-                        <div id="game-infoPanel-details">
-                            DETAILS
+                        <div id="game-infoPanel-info-container">
+                            <div id="game-infoPanel-info-rating-wrapper">
+                                <img id="game-infoPanel-info-rating-hexagon" src="images/rating_hexagon.svg" alt="Rating Hexagon">
+                                <div id="game-infoPanel-info-rating-value">8.2</div>
+                            </div>
+                            <div id="game-infoPanel-info-content">
+                                <div id="game-infoPanel-info-titleAndYear-wrapper">
+                                    <a href="#" id="game-infoPanel-info-title">Sky Team</a>
+                                    <div id="game-infoPanel-info-year">(2023)</div>
+                                </div>
+                                <div id="game-infoPanel-info-description">
+                                    Work together silently to land a plane under increasingly challenging circumstances.
+                                </div>
+                            </div>
                         </div>
+                        <!-- <div id="game-infoPanel-details">
+                            DETAILS
+                        </div> -->
                     </div>
                 </div>
             </article>
