@@ -29,7 +29,7 @@ article{
     display: flex;
     align-items: flex-start;
     flex-grow: 1;
-    background-color: #000;
+    background-color: #0a090f;
     color: white;
     padding: 15px;
     border-top-left-radius: inherit;
@@ -229,18 +229,77 @@ article{
 
 #game-infoPanel-buttons-container{
     display: flex;
+    gap: 10px;
     margin-top: 10px;
+    height: 30px;
+    padding: 1px 0px;
+
+    font-size: 0.875rem;
+    font-family: proxima-nova-bold, Arial, sans-serif;
+    color: black;
 }
 
 .game-infoPanel-button{
-    height: 28px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    
+    background-color: #e9e9ec;
     border-radius: 4px;
     border: none;
-    padding: 3px 10px;
+    padding: 3px 10px;    
+}
+
+.game-infoPanel-button:hover{
+    cursor: pointer;
+    color: inherit;
+    text-decoration: none;
+    filter: brightness(0.85);
 }
 
 #game-infoPanel-button-BuyACopy{
     background-color: #1c7b4b;
-    font-family: proxima-nova-bold, Arial, sans-serif;
     color: white;
 }
+
+#game-infoPanel-button-SleeveIt{
+    background-color: #3f3a60;
+    color: white;
+}
+
+.game-infoPanel-button-img{
+    width: 16px;
+    margin-right: 6px;
+}
+
+#game-infoPanel-button-AddToCollection{
+    background-color: #005bca;
+    color: white;
+}
+
+#game-infoPanel-button-likes-heart{
+    margin-right: -10px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#game-infoPanel-button-likes-img{
+    color: #666e75;
+    margin-right: 0px;
+}
+
+#game-infoPanel-button-likes-hr{
+    border: 0.5px solid #666e75;
+    width: 0px;
+    height: calc(100% - 1px);
+    margin: 0px;
+}
+
+#game-infoPanel-button-likes-count{
+    margin-left: -10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+
+

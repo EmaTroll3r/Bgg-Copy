@@ -75,7 +75,7 @@
             <div id="quickbar">QuickBar</div>
 
             <article>
-                <div id="game-infoPanel-container">
+                <section id="game-infoPanel-container">
                     <img id="game-infoPanel-mainImage" src="https://cf.geekdo-images.com/uXMeQzNenHb3zK7Hoa6b2w__itemrep/img/oaw-LYEIaB20e79Y568JgyHZ5NQ=/fit-in/246x300/filters:strip_icc()/pic7398904.jpg" alt="Sky-Team">
                     <div id="game-infoPanel-content">
                         <div id="game-infoPanel-rank">
@@ -204,11 +204,39 @@
                             </div>
                         </div>
                         <div id="game-infoPanel-buttons-container">
-                            <button id="game-infoPanel-button-BuyACopy" class="game-infoPanel-button">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                Buy a Copy
-                            </button>
+                            <a id="game-infoPanel-button-BuyACopy" class="game-infoPanel-button" href="#">
+                                <i class="fa-solid fa-cart-shopping game-infoPanel-button-img"></i>
+                                <div class="game-infoPanel-button-text">Buy a Copy</div>
+                            </a>
+                            <a id="game-infoPanel-button-SleeveIt" class="game-infoPanel-button" href="#">
+                                <img class="game-infoPanel-button-img" src="images/game-infoPanel-button-sleeveIt.svg" alt="Sleeve It">
+                                <div class="game-infoPanel-button-text">Sleeve It</div>
+                            </a>
+                            <a id="game-infoPanel-button-AddToCollection" class="game-infoPanel-button"  href="#">
+                                <i class="fa-solid fa-list game-infoPanel-button-img"></i>
+                                <div class="game-infoPanel-button-text">Add To Collection</div>
+                            </a>
+                            <a id="game-infoPanel-button-LogPlay" class="game-infoPanel-button"  href="#">
+                                <div class="game-infoPanel-button-text">Log Play</div>
+                            </a>
+                            <a id="game-infoPanel-button-likes-heart" class="game-infoPanel-button"  href="#">
+                                <i id="game-infoPanel-button-likes-img" class="fa-solid fa-heart game-infoPanel-button-img"></i>
+                            </a>
+                            <hr id="game-infoPanel-button-likes-hr">
+                            <a id="game-infoPanel-button-likes-count" class="game-infoPanel-button"  href="#">
+                                <div id="game-infoPanel-button-likes-value" class="game-infoPanel-button-text">2.4K</div>
+                            </a>
+                            <a id="game-infoPanel-button-subscribe" class="game-infoPanel-button"  href="#">
+                                <div class="game-infoPanel-button-text">Subscribe</div>
+                            </a>
+                        </div>
                     </div>
+                </section>
+                <div id="game-sections-container">
+                    <div class="game-section-item">Overview</div>
+                    <div class="game-section-item">Rating</div>
+                    <div class="game-section-item">Forums</div>
+
                 </div>
             </article>
         </div>

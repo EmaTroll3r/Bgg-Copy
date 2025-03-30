@@ -11,15 +11,12 @@
         flex-grow: 1;
     }
 
-    .home-split-vertical-hr{
-        display: flex;
-    }
-
     #nav-links-container{
         display: none;
     }
 
     .home-split-vertical-hr{
+        display: flex;
         width: calc(100% + 70px);
         margin: 0px -35px;
     }
