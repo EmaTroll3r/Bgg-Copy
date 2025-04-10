@@ -34,6 +34,41 @@ homeSectionItems = {
       "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/800270/header.jpg?t=1741270803",
       "alt": "Terraforming Mars",
 			"href": "#"
+    },
+    {
+      "title": "Catan",
+      "description": "Trade, build, and settle in this classic strategy game.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZPUgAlCE-WPAdGoZjMl9lYHY3CbMAzRnXBQ&s",
+      "alt": "Catan",
+			"href": "#"
+    },
+    {
+      "title": "Ticket to Ride",
+      "description": "Build train routes across the map to connect cities.",
+      "image": "https://i.ytimg.com/vi/aDLg1IfDuNU/maxresdefault.jpg",
+      "alt": "Ticket to Ride",
+			"href": "#"
+    },
+    {
+      "title": "Carcassonne",
+      "description": "Place tiles and claim areas to score points.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/598810/capsule_616x353.jpg?t=1741270649",
+      "alt": "Carcassonne",
+			"href": "#"
+    },
+    {
+      "title": "Pandemic",
+      "description": "Work together to stop global outbreaks of diseases.",
+      "image": "https://assets.infinitygamingtable.com/assets/ScreenShots/124/pand1__FitMaxWzY0MCwzNjBd.png",
+      "alt": "Pandemic",
+			"href": "#"
+    },
+    {
+      "title": "Terraforming Mars",
+      "description": "Compete to transform Mars into a habitable planet.",
+      "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/800270/header.jpg?t=1741270803",
+      "alt": "Terraforming Mars",
+			"href": "#"
     }],
   "crowdfunding" : [
     {

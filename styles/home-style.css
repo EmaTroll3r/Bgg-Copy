@@ -180,15 +180,17 @@ a.item {
 .home-section-content{
     display: flex;
     justify-content: space-between;
-    /* overflow-x: auto; */
+    overflow-x: auto;
     gap: 20px;
     width: 100%;
     scrollbar-width: none;
 }
 
-.home-section-content::-webkit-scrollbar {
-    display: none;
+.home-section-arrowRight{
+    position: fixed;
+    color: red;
 }
+
 
 .home-section-item{
     width: 220px;
