@@ -64,6 +64,12 @@ nav{
     align-items: center;
 }
 
+.nav-user-links:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+
 #nav-search-container{
     display: flex;
     align-items: center;
@@ -79,6 +85,7 @@ nav{
 
 #nav-search-container .fa-search:hover {
     color: black;
+    cursor: pointer;
 }
 
 #search{
@@ -104,13 +111,13 @@ nav{
     border: var(--nav-temp-border);
 }
 
-#nav-links-container .nav-item:hover .nav-submenu{
-    display: flex;
-}
-
 .nav-submenu-content{
     display: flex;
     margin: 0px -15px;
+}
+
+.nav-show-Submenu .nav-submenu {
+    display: flex;
 }
 
 .nav-submenu{

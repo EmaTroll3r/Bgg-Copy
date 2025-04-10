@@ -10,6 +10,22 @@ article{
     padding: 10px 35px 20px 35px;
 }
 
+#quickbar{
+    position: fixed;
+    left: 0px;
+    top: var(--nav-height);
+    display: none;
+    justify-content: center;
+    width: 150px;
+    height: 1290px;
+    border: 1px solid #000;
+    margin-right: 10px;
+    background-color: #fff;
+}
+
+.quickbar-show{
+    display: flex !important;
+}
 
 #home-explore-section-content{
     display: flex;
@@ -160,7 +176,7 @@ article{
 .home-section-content{
     display: flex;
     justify-content: space-between;
-    overflow-x: auto;
+    /* overflow-x: auto; */
     gap: 20px;
     width: 100%;
     scrollbar-width: none;
