@@ -3,24 +3,25 @@ const navItems = document.querySelectorAll('.nav-links-item');
 const navMenu = document.querySelector('#nav-menu-container');
 const quickbar = document.querySelector('#quickbar');
 
-for(let item of navItems) {
-    item.addEventListener('click', function() {
-        item.classList.add('nav-show-Submenu');
-    });
+function showSubmenu(event) {
+    event.currentTarget.classList.toggle('nav-show-Submenu');
 }
 
-
-document.addEventListener('click', function() {
+function hideAllSubMenu() {
     for (let item of navItems) {
         item.classList.remove('nav-show-Submenu');
     }
 }
-,{ capture: true}
-);
 
-
-navMenu.addEventListener('click', function(event) {
-    console.log(quickbar);
+function toggleQuickbar() {
     quickbar.classList.toggle('quickbar-show');
-});
+}
+
+for(let item of navItems) {
+    item.addEventListener('click', showSubmenu);
+}
+
+document.addEventListener('click', hideAllSubMenu,{ capture: true});
+
+navMenu.addEventListener('click', toggleQuickbar);
     

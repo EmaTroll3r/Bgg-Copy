@@ -44,7 +44,7 @@ article{
     margin-bottom: 0px;
 }
 
-#home-explore-title div{
+#home-explore-title{
     font-family: proxima-nova-bold, Arial, sans-serif;
     font-size: 1.15rem;
     padding: 8px 16px;    
@@ -60,6 +60,10 @@ article{
 #home-explore-main-container img {
     width: 100%;
     border-radius: 10px;
+}
+
+a.item {
+    display: block;
 }
 
 .item:hover{
