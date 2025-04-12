@@ -149,9 +149,14 @@ nav{
     text-decoration: none;
 }
 
-#nav-username{
+#nav-username-container{
     margin: 0px;
 }
+
+#nav-username-content{
+    content: attr(data-username);
+}
+
 
 
 @media (max-width: 1050px) {
@@ -193,7 +198,7 @@ nav{
         margin-right: 10px;
     }
 
-    #nav-username{
+    #nav-username-container{
         display: none;
     }
 
