@@ -2,9 +2,7 @@
 const navItems = document.querySelectorAll('.nav-links-item');
 const navMenu = document.querySelector('#nav-menu-container');
 const quickbar = document.querySelector('#quickbar');
-const usernameContainer = document.querySelector('#nav-username-container');
 const usernameContent = document.querySelector('#nav-username-content');
-
 
 
 function showSubmenu(event) {
@@ -28,11 +26,8 @@ for(let item of navItems) {
     item.addEventListener('click', showSubmenu);
 }
 
-if (!usernameContainer.dataset.username) {
-    usernameContainer.dataset.username = "Sign In";
-}
-usernameContent.textContent = usernameContainer.dataset.username;
-
+usernameContent.dataset.username = userData.username || "Sign In";
+usernameContent.dataset.userId = userData.userId || "0000";
 
 
 
