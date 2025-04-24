@@ -301,5 +301,67 @@ article{
     border-bottom-left-radius: 0px;
 }
 
+#game-sections-container{
+    padding: 0px 25px;
+    border-top: 1px solid #b4b4b4;
+}
+
+#game-sections-content{
+    display: flex;
+}
+
+#game-sections-container hr{
+    margin: -2px 0px 0px 0px;
+}
+
+.game-section-item{
+    padding: 10px 5px;
+    margin-right: 6px;
+    font-size: 0.875rem;
+    font-family: proxima-nova-bold, Arial, sans-serif;
+}
+
+.game-section-item:hover a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+[data-current-game-section-tab="1"]{
+    border-bottom: 4px solid #ff5100;
+}
+
+#game-overview-section{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 25px 5px 25px;
+}
 
 
+#game-playthroughVideo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#game-playthroughVideo-banner{
+    border-radius: 4px;
+}
+
+#game-playthroughVideo-playbutton {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    color: white;
+    font-size: 2.5rem;
+}
+
+#game-playthroughVideo-container:hover{
+    cursor: pointer;
+    filter: brightness(0.85);
+}
+
+#game-playthroughVideo-container:hover #game-playthroughVideo-playbutton{
+    display: flex;
+}
