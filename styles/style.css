@@ -1,16 +1,22 @@
-:root{
+
+body{
+    margin: 0px;
+    background-color: #ecedee;
+    font-family: proxima-nova-regular, Arial, sans-serif;
+    
     --nav-temp-border: 0px solid red;
     --section-temp-border: 1px solid black;
     --primary-color: #ffffee;
     --text-color-secondary: #585F65;
     --text-color-third: #878f96;
     --nav-height: 50px;
-}
-
-body{
-    margin: 0px;
-    background-color: #ecedee;
-    font-family: proxima-nova-regular, Arial, sans-serif;
+    --primary-blue-link: #007bff;
+    
+    --gray-link: #dbdbdb;
+    --blue-link: #005bd3;
+    --primary-gray: #585f65;
+    --secondary-gray: #43484d;
+    --light-gray: #b4b4b4;
 }
 
 hr{
@@ -34,7 +40,12 @@ a{
     background-color: transparent;
 }
 
-a:hover{
+/* a:hover{
     color: #007bff;
+    text-decoration: underline;
+} */
+
+.underlined-link:hover{
+    color: var(--primary-blue-link);
     text-decoration: underline;
 }

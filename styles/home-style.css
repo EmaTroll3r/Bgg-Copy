@@ -79,13 +79,14 @@ a.item {
 }
 
 .item:hover .item-title {
-    color: #007bff;
+    color: var(--primary-blue-link);
     text-decoration: underline;
 }
 
 .item:hover .item-description{
     text-decoration: underline;
     text-decoration-color: var(--text-color-third);
+    color: black;
 }
 
 .item-author{
@@ -302,6 +303,11 @@ a.item {
 
 .home-section-item-author{
     margin-top: 5px;
+}
+
+.home-author:hover{
+    text-decoration: underline;
+    color: var(--primary-blue-link);
 }
 
 

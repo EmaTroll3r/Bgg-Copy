@@ -145,7 +145,8 @@ nav{
     white-space: nowrap;
 }
 
-.nav-submenu-item a:hover{
+.nav-submenu-item-link:hover{
+    color: var(--primary-blue-link);
     text-decoration: none;
 }
 

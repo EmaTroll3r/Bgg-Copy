@@ -3,7 +3,7 @@ const navItems = document.querySelectorAll('.nav-links-item');
 const navMenu = document.querySelector('#nav-menu-container');
 const quickbar = document.querySelector('#quickbar');
 const usernameContent = document.querySelector('#nav-username-content');
-
+console.log(usernameContent)
 
 function showSubmenu(event) {
     event.currentTarget.classList.toggle('nav-show-Submenu');

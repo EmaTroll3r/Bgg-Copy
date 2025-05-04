@@ -112,7 +112,7 @@ homeSectionItems = {
       "image": "https://www.celjaded.com/wp-content/uploads/2015/12/CelJaded-Splendor-Board-Game-Review-Banner.jpg",
       "alt": "Splendor",
       "expires": "10 April",
-      "description": "Collect gems and build your wealth in this elegant strategy game.",
+      "description": "Collect gems, build your wealth in this elegant strategy game.",
       "link": "link-esterno",
 			"href": "#"
     }],

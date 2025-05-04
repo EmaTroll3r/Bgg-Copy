@@ -55,7 +55,7 @@ function createHomeSectionCrowdfundingItem(item, n) {
 
     const link = document.createElement('a');
     link.href = item.link;
-    link.classList.add('home-section-item-outer-link');
+    link.classList.add('home-section-item-outer-link', 'home-author');
     link.textContent = 'Visit Project';
 
     textContainer.appendChild(title);
@@ -148,6 +148,7 @@ function createHomeSectionDeepReviewssItem(item, n) {
     authorContainer.innerHTML = `by&nbsp;`;
 
     const authorLink = document.createElement('a');
+    authorLink.classList.add('home-author');
     authorLink.href = '#';
     authorLink.textContent = item.author;
 
@@ -211,6 +212,7 @@ function createHomeSectionGeeklistsItem(item, n) {
 
     const authorText = document.createTextNode('by\u00A0'); // \u00A0 è uno spazio non interrotto
     const authorLink = document.createElement('a');
+    authorLink.classList.add('home-author');
     authorLink.href = '#';
     authorLink.textContent = item.author;
 
@@ -276,6 +278,7 @@ function createHomeSectionHotVideosItem(item, n) {
 
     const authorText = document.createTextNode('by\u00A0'); // \u00A0 è uno spazio non interrotto
     const authorLink = document.createElement('a');
+    authorLink.classList.add('home-author');
     authorLink.href = '#';
     authorLink.textContent = item.author;
 
@@ -340,6 +343,7 @@ function createHomeSplitItem(item) {
 
     const authorText = document.createTextNode('by\u00A0'); // \u00A0 è uno spazio non interrotto
     const authorLink = document.createElement('a');
+    authorLink.classList.add('home-author');
     authorLink.href = '#';
     authorLink.textContent = item.author;
 
