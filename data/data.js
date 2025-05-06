@@ -272,7 +272,8 @@ homeSectionItems = {
         "alt": "The Castles of Burgundy",
         "author": "EmaTroll3r",
         "n_likes": 42,
-        "n_comments": 18
+        "n_comments": 18,
+			  "href": "#"
     },
     {
         "title": "Everdell",
@@ -280,7 +281,8 @@ homeSectionItems = {
         "alt": "Everdell",
         "author": "EmaTroll3r",
         "n_likes": 50,
-        "n_comments": 22
+        "n_comments": 22,
+			  "href": "#"
     },
     {
         "title": "7 Wonders",
@@ -288,7 +290,8 @@ homeSectionItems = {
         "alt": "7 Wonders",
         "author": "EmaTroll3r",
         "n_likes": 60,
-        "n_comments": 25
+        "n_comments": 25,
+			  "href": "#"
     },
     {
         "title": "Pandemic Legacy",
@@ -296,7 +299,8 @@ homeSectionItems = {
         "alt": "Pandemic Legacy",
         "author": "EmaTroll3r",
         "n_likes": 65,
-        "n_comments": 30
+        "n_comments": 30,
+			  "href": "#"
     },
     {
         "title": "Codenames",
@@ -304,7 +308,8 @@ homeSectionItems = {
         "alt": "Codenames",
         "author": "EmaTroll3r",
         "n_likes": 45,
-        "n_comments": 15
+        "n_comments": 15,
+			  "href": "#"
     }],
   "geeklist": [
     {
@@ -313,14 +318,16 @@ homeSectionItems = {
         "alt": "Cryptid",
         "author": "EmaTroll3r",
         "n_likes": 30,
-        "n_comments": 10
+        "n_comments": 10,
+			  "href": "#"
     },{
       "title": "Colt Super Express",
       "image": "https://www.msedizioni.it/wp-content/uploads/2021/03/slider-msedizioni-COLT-EXPRESS.jpg",
       "alt": "Colt Super Express",
       "author": "EmaTroll3r",
       "n_likes": 23,
-      "n_comments": 18
+      "n_comments": 18,
+			"href": "#"
     },
     {
       "title": "Here to Slay",
@@ -328,7 +335,8 @@ homeSectionItems = {
       "alt": "Here to Slay",
       "author": "EmaTroll3r",
       "n_likes": 12,
-      "n_comments": 25
+      "n_comments": 25,
+			"href": "#"
     },
     {
         "title": "Le leggende di Andor",
@@ -336,15 +344,17 @@ homeSectionItems = {
         "alt": "Le leggende di Andor",
         "author": "EmaTroll3r",
         "n_likes": 14,
-        "n_comments": 7
+        "n_comments": 7,
+			  "href": "#"
     },
     {
         "title": "Akros",
-        "image": "https://i.ytimg.com/vi/isO_hLlQaiw/maxresdefault.jpg",
+        "image": "https://cf.geekdo-images.com/SWEFgWLWyDE3PI6PAgA14w__opengraph/img/cCACybzLFGVkfPBhx_uKvq_jV3k=/0x0:627x329/fit-in/1200x630/filters:strip_icc()/pic5252329.png",
         "alt": "Akros",
         "author": "EmaTroll3r",
         "n_likes": 8,
-        "n_comments": 15
+        "n_comments": 15,
+			  "href": "#"
     }],
   "hotVideos":   [
     {
@@ -353,7 +363,8 @@ homeSectionItems = {
         "alt": "Top 5 Hidden Gems",
         "author": "EmaTroll3r",
         "n_likes": 38,
-        "n_comments": 7
+        "n_comments": 7,
+			  "href": "#"
     },
     {
         "title": "How to Win at Catan Every Time",
@@ -361,7 +372,8 @@ homeSectionItems = {
         "alt": "Catan Strategy Guide",
         "author": "EmaTroll3r",
         "n_likes": 21,
-        "n_comments": 10
+        "n_comments": 10,
+			  "href": "#"
     },
     {
         "title": "The Most Beautiful Board Games Ever Made",
@@ -369,7 +381,8 @@ homeSectionItems = {
         "alt": "Beautiful Board Games",
         "author": "EmaTroll3r",
         "n_likes": 6,
-        "n_comments": 34
+        "n_comments": 34,
+			  "href": "#"
     },
     {
         "title": "Why Gloomhaven is the Best Game of All Time",
@@ -377,7 +390,8 @@ homeSectionItems = {
         "alt": "Gloomhaven Review",
         "author": "EmaTroll3r",
         "n_likes": 20,
-        "n_comments": 8
+        "n_comments": 8,
+			  "href": "#"
     },
     {
         "title": "10 Quick Board Games for Busy Nights",
@@ -385,7 +399,8 @@ homeSectionItems = {
         "alt": "Quick Board Games",
         "author": "EmaTroll3r",
         "n_likes": 23,
-        "n_comments": 15
+        "n_comments": 15,
+			  "href": "#"
     }],
 }
 
@@ -397,7 +412,8 @@ homeSplitItems = {
       "alt": "Terraforming Mars Expansion",
       "author": "EmaTroll3r",
       "n_likes": 45,
-      "n_comments": 20
+      "n_comments": 20,
+			"href": "#"
     },
     {
       "title": "Catan World Championship 2025 Results",
@@ -405,7 +421,8 @@ homeSplitItems = {
       "alt": "Catan Championship",
       "author": "EmaTroll3r",
       "n_likes": 30,
-      "n_comments": 15
+      "n_comments": 15,
+			"href": "#"
     },
     {
       "title": "Top 10 Most Anticipated Board Games of 2025",
@@ -413,7 +430,8 @@ homeSplitItems = {
       "alt": "Most Anticipated Board Games",
       "author": "EmaTroll3r",
       "n_likes": 60,
-      "n_comments": 25
+      "n_comments": 25,
+			"href": "#"
     },
     {
       "title": "Board Game Cafe Opens in Downtown",
@@ -421,7 +439,8 @@ homeSplitItems = {
       "alt": "Game Cafe",
       "author": "EmaTroll3r",
       "n_likes": 25,
-      "n_comments": 10
+      "n_comments": 10,
+			"href": "#"
     },
     {
       "title": "Kickstarter Success: New Cooperative Game Breaks Records",
@@ -429,7 +448,8 @@ homeSplitItems = {
       "alt": "Arcs",
       "author": "EmaTroll3r",
       "n_likes": 70,
-      "n_comments": 35
+      "n_comments": 35,
+			"href": "#"
     }],
   "hotDiscussion": [
     {
@@ -438,7 +458,8 @@ homeSplitItems = {
       "alt": "Terraforming Mars Expansion",
       "author": "EmaTroll3r",
       "n_likes": 45,
-      "n_comments": 20
+      "n_comments": 20,
+			"href": "#"
     },
     {
       "title": "Catan World Championship 2025 Results",
@@ -446,7 +467,8 @@ homeSplitItems = {
       "alt": "Catan Championship",
       "author": "EmaTroll3r",
       "n_likes": 30,
-      "n_comments": 15
+      "n_comments": 15,
+			"href": "#"
     },
     {
       "title": "Top 10 Most Anticipated Board Games of 2025",
@@ -454,7 +476,8 @@ homeSplitItems = {
       "alt": "Most Anticipated Board Games",
       "author": "EmaTroll3r",
       "n_likes": 60,
-      "n_comments": 25
+      "n_comments": 25,
+			"href": "#"
     },
     {
       "title": "Board Game Cafe Opens in Downtown",
@@ -462,7 +485,8 @@ homeSplitItems = {
       "alt": "Game Cafe",
       "author": "EmaTroll3r",
       "n_likes": 25,
-      "n_comments": 10
+      "n_comments": 10,
+			"href": "#"
     },
     {
       "title": "Kickstarter Success: New Cooperative Game Breaks Records",
@@ -470,7 +494,8 @@ homeSplitItems = {
       "alt": "Arcs",
       "author": "EmaTroll3r",
       "n_likes": 70,
-      "n_comments": 35
+      "n_comments": 35,
+			"href": "#"
     }],
   "blogs": [
     {
@@ -479,7 +504,8 @@ homeSplitItems = {
       "alt": "Board Game Art",
       "author": "GameArtLover",
       "n_likes": 50,
-      "n_comments": 18
+      "n_comments": 18,
+			"href": "#"
     },
     {
       "title": "Top 5 Board Games with Incredible Miniatures",
@@ -487,7 +513,8 @@ homeSplitItems = {
       "alt": "Board Game Miniatures",
       "author": "MiniatureFan",
       "n_likes": 75,
-      "n_comments": 30
+      "n_comments": 30,
+			"href": "#"
     },
     {
       "title": "How Board Game Covers Influence Your Purchase",
@@ -495,7 +522,8 @@ homeSplitItems = {
       "alt": "Board Game Covers",
       "author": "CoverCritic",
       "n_likes": 40,
-      "n_comments": 12
+      "n_comments": 12,
+			"href": "#"
     },
     {
       "title": "The Evolution of Board Game Design: A Visual Journey",
@@ -503,7 +531,8 @@ homeSplitItems = {
       "alt": "Board Game Design",
       "author": "DesignHistorian",
       "n_likes": 65,
-      "n_comments": 22
+      "n_comments": 22,
+			"href": "#"
     },
     {
       "title": "Photographing Your Board Game Collection Like a Pro",
@@ -511,7 +540,8 @@ homeSplitItems = {
       "alt": "Board Game Photography",
       "author": "PhotoGamer",
       "n_likes": 90,
-      "n_comments": 45
+      "n_comments": 45,
+			"href": "#"
     }],
   "forums": [
     {
@@ -520,7 +550,8 @@ homeSplitItems = {
       "alt": "Frosthaven Expansion",
       "author": "BoardMaster99",
       "n_likes": 80,
-      "n_comments": 40
+      "n_comments": 40,
+			"href": "#"
     },
     {
       "title": "Wingspan Wins Game of the Year 2025",
@@ -528,7 +559,8 @@ homeSplitItems = {
       "alt": "Wingspan Award",
       "author": "GameCriticPro",
       "n_likes": 55,
-      "n_comments": 20
+      "n_comments": 20,
+			"href": "#"
     },
     {
       "title": "Pandemic Legacy: Season 3 Rumors",
@@ -536,7 +568,8 @@ homeSplitItems = {
       "alt": "Pandemic Legacy Season 3",
       "author": "TabletopFanatic",
       "n_likes": 90,
-      "n_comments": 50
+      "n_comments": 50,
+			"href": "#"
     },
     {
       "title": "Azul: New Edition with Exclusive Tiles",
@@ -544,7 +577,8 @@ homeSplitItems = {
       "alt": "Azul New Edition",
       "author": "TileLover",
       "n_likes": 40,
-      "n_comments": 15
+      "n_comments": 15,
+			"href": "#"
     },
     {
       "title": "Root: New Faction Expansion Announced",
@@ -552,6 +586,7 @@ homeSplitItems = {
       "alt": "Root Expansion",
       "author": "ForestStrategist",
       "n_likes": 75,
-      "n_comments": 30
+      "n_comments": 30,
+			"href": "#"
     }]
 }

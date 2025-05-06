@@ -259,6 +259,11 @@ a.item {
     align-items: center;
 }
 
+.home-split-item.item {
+    display: flex;
+}
+
+
 .home-split-item img{
     height: 60px;
     width: 60px;
@@ -304,6 +309,7 @@ a.item {
 .home-section-item-author{
     margin-top: 5px;
 }
+
 
 .home-author:hover{
     text-decoration: underline;

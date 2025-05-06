@@ -320,7 +320,8 @@ function createHomeSectionHotVideosItem(item, n) {
 }
 
 function createHomeSplitItem(item) {
-    const splitItem = document.createElement('div');
+    const splitItem = document.createElement('a');
+    splitItem.href = '#';
     splitItem.classList.add('home-split-item', 'item');
 
     // Creazione dell'immagine
@@ -384,6 +385,137 @@ function createHomeSplitItem(item) {
     return splitItem;
 }
 
+function createHomeSectionHotBooksItem(item, n) {
+    const sectionItem = document.createElement('a');
+    sectionItem.href = item.href;
+    sectionItem.classList.add('home-section-item', 'item');
+
+    // Creazione dell'immagine
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = item.alt;
+
+    // Contenitore del testo
+    const textContainer = document.createElement('div');
+    textContainer.classList.add('home-section-item-text');
+
+    // Titolo
+    const title = document.createElement('div');
+    title.classList.add('home-section-item-title', 'item-title');
+    title.textContent = `${n} - ${item.title}`;
+
+    // Autore
+    const authorContainer = document.createElement('div');
+    authorContainer.classList.add('home-section-item-author', 'item-author');
+
+    const authorText = document.createTextNode('by\u00A0'); // \u00A0 è uno spazio non interrotto
+    const authorLink = document.createElement('a');
+    authorLink.classList.add('home-author');
+    authorLink.href = '#';
+    authorLink.textContent = item.author;
+
+    // Icone like e commenti
+    const likeCommentsContainer = document.createElement('div');
+    likeCommentsContainer.classList.add('home-likeComments-icons');
+
+    const likeIcon = document.createElement('i');
+    likeIcon.classList.add('fa-regular', 'fa-thumbs-up', 'home-likeComments-icon');
+
+    const likeCount = document.createElement('div');
+    likeCount.classList.add('home-split-number');
+    likeCount.textContent = item.n_likes;
+
+    const commentIcon = document.createElement('i');
+    commentIcon.classList.add('fa-regular', 'fa-message', 'home-likeComments-icon');
+
+    const commentCount = document.createElement('div');
+    commentCount.classList.add('home-split-number');
+    commentCount.textContent = item.n_comments;
+
+    // Assemblaggio degli elementi
+    likeCommentsContainer.appendChild(likeIcon);
+    likeCommentsContainer.appendChild(likeCount);
+    likeCommentsContainer.appendChild(commentIcon);
+    likeCommentsContainer.appendChild(commentCount);
+
+    authorContainer.appendChild(authorText);
+    authorContainer.appendChild(authorLink);
+    authorContainer.appendChild(likeCommentsContainer);
+
+    textContainer.appendChild(title);
+    textContainer.appendChild(authorContainer);
+
+    sectionItem.appendChild(img);
+    sectionItem.appendChild(textContainer);
+
+    return sectionItem;
+}
+
+function fetchBoardGameBooks() {
+    const maxResults = 5;
+    const query = "boardgames";
+    const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=${maxResults}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const books = data.docs;
+            const booksContainer = document.querySelector("#hotBooks-section > .home-section-content");
+
+            for (let i = 0; i < maxResults; i++) {
+                const book = books[i];
+                const item = {
+                    href: "#",
+                    image: book.cover_i
+                        ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
+                        : "https://www.sullivanprovostschools.ac.tz/wp-content/themes/sullivan/assets/img/tmp/placeholder.jpg", // Placeholder se non c'è copertina
+                    alt: book.title || "Titolo non disponibile",
+                    title: book.title || "Titolo non disponibile",
+                    author: book.author_name ? book.author_name[0] : "Autore non disponibile",
+                    n_likes: 20,
+                    n_comments: 30,
+                };
+
+                const sectionItem = createHomeSectionHotBooksItem(item, i + 1);
+                booksContainer.appendChild(sectionItem);
+            }
+        })
+        .catch(error => console.error("Errore nella richiesta API:", error));
+}
+
+function fetchBoardGameVideos() {
+    const apiKey = "AIzaSyBPne0SMpiQtHiscRuRj1xgJ8B-rZKZxmA";
+    const query = "board games";
+    const maxResults = 5;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(query)}&maxResults=${maxResults}&key=${apiKey}&videoEmbeddable=true&videoDuration=medium`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const videos = data.items;
+            const videosContainer = document.querySelector("#hotVideos-section > .home-section-content");
+
+            for (let i = 0; i < maxResults; i++) {
+                const video = videos[i];
+                const item = {
+                    href: `https://www.youtube.com/watch?v=${video.id.videoId}`,
+                    image: video.snippet.thumbnails.medium.url,
+                    alt: video.snippet.title,
+                    title: video.snippet.title,
+                    author: video.snippet.channelTitle,
+                    n_likes: 15,
+                    n_comments: 50,
+                };
+
+                const sectionItem = createHomeSectionHotVideosItem(item, i + 1);
+                videosContainer.appendChild(sectionItem);
+            }
+        })
+        .catch(error => console.error("Errore nella richiesta API di YouTube:", error));
+}
+
+
+
 const hotnessContent = document.querySelector('#hot-section > .home-section-content');
 const crowdfundingContent = document.querySelector('#crowdfunding-section > .home-section-content');
 const videoContent = document.querySelector('#videos-section > .home-section-content');
@@ -392,12 +524,14 @@ const givewayContent = document.querySelector('#giveway-section > .home-section-
 const mostPlayedContent = document.querySelector('#mostPlayed-section > .home-section-content');
 const deepReviewsContent = document.querySelector('#deepReviews-section > .home-section-content');
 const geeklistContent = document.querySelector('#geeklist-section > .home-section-content');
-const hotVideosContent = document.querySelector('#hotVideos-section > .home-section-content');
+// const hotVideosContent = document.querySelector('#hotVideos-section > .home-section-content');
 
 const bgNewsContent = document.querySelector('#home-news-split > .home-split-content');
 const discussionContent = document.querySelector('#home-discussion-split > .home-split-content');
 const blogsContent = document.querySelector('#home-blogs-split > .home-split-content');
 const forumsContent = document.querySelector('#home-forums-split > .home-split-content');
+
+const booksContent = document.querySelector('#hotBooks-section > .home-section-content');
 
 
 for (let i=0; i < homeSectionItems.boardGames.length; i++) {
@@ -456,12 +590,12 @@ for (let i=0; i < homeSectionItems.geeklist.length; i++) {
     geeklistContent.appendChild(sectionItem);
 }
 
-for (let i=0; i < homeSectionItems.hotVideos.length; i++) {
-    const item = homeSectionItems.hotVideos[i];
-    console.log("Loaded " + item.title)
-    const sectionItem = createHomeSectionHotVideosItem(item, i + 1);
-    hotVideosContent.appendChild(sectionItem);
-}
+// for (let i=0; i < homeSectionItems.hotVideos.length; i++) {
+//     const item = homeSectionItems.hotVideos[i];
+//     console.log("Loaded " + item.title)
+//     const sectionItem = createHomeSectionHotVideosItem(item, i + 1);
+//     hotVideosContent.appendChild(sectionItem);
+// }
 
 
 for (let i=0; i < homeSplitItems.boardGameNews.length; i++) {
@@ -515,3 +649,8 @@ for (let i=0; i < homeSplitItems.forums.length; i++) {
         forumsContent.appendChild(hrItem);
     }
 }
+
+
+fetchBoardGameBooks();
+
+fetchBoardGameVideos();
