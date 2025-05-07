@@ -205,7 +205,7 @@ function fetchBoardGameBooks() {
 }
 
 function fetchBoardGameVideos() {
-    const apiKey = "AIzaSyBPne0SMpiQtHiscRuRj1xgJ8B-rZKZxmA";
+    const apiKey = "secret";
     const query = "board games";
     const maxResults = 5;
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(query)}&maxResults=${maxResults}&key=${apiKey}&videoEmbeddable=true&videoDuration=medium`;
