@@ -20,7 +20,6 @@ function createHomeSectionItem(item, n) {
         var description = document.createElement('div');
         description.classList.add('home-section-item-description', 'item-description');
         description.textContent = item.description;
-        console.log("description: " + item.description)
     }
 
     if(item.publisher && item.expires){
@@ -205,7 +204,8 @@ function fetchBoardGameBooks() {
 }
 
 function fetchBoardGameVideos() {
-    const apiKey = "secret";
+    const apiKey = youtube_api_key || "secret";
+    console.log("youtube_api_key: " + apiKey)
     const query = "board games";
     const maxResults = 5;
     const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${encodeURIComponent(query)}&maxResults=${maxResults}&key=${apiKey}&videoEmbeddable=true&videoDuration=medium`;
@@ -261,7 +261,7 @@ const forumsContent = document.querySelector('#home-forums-split > .home-split-c
 //     const content = homeSectionContents[i];
 //     for (let i=0; i < homeSectionItems.boardGames.length; i++) {
 //         const item = homeSectionItems.boardGames[i];
-//         console.log("Loaded " + item.title)
+//         //console.log("Loaded " + item.title)
 //         const sectionItem = createHomeSectionItem(item, i + 1);
 //         content.appendChild(sectionItem);
 //     }
@@ -271,71 +271,64 @@ const forumsContent = document.querySelector('#home-forums-split > .home-split-c
 
 for (let i=0; i < homeSectionItems.boardGames.length; i++) {
     const item = homeSectionItems.boardGames[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     hotnessContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.crowdfunding.length; i++) {
     const item = homeSectionItems.crowdfunding[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     crowdfundingContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.videos.length; i++) {
     const item = homeSectionItems.videos[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     videoContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.bestseller.length; i++) {
     const item = homeSectionItems.bestseller[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     bestsellerContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.giveway.length; i++) {
     const item = homeSectionItems.giveway[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     givewayContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.mostPlayed.length; i++) {
     const item = homeSectionItems.mostPlayed[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     mostPlayedContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.deepReviews.length; i++) {
     const item = homeSectionItems.deepReviews[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     deepReviewsContent.appendChild(sectionItem);
 }
 
 for (let i=0; i < homeSectionItems.geeklist.length; i++) {
     const item = homeSectionItems.geeklist[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSectionItem(item, i + 1);
     geeklistContent.appendChild(sectionItem);
 }
 
-// for (let i=0; i < homeSectionItems.hotVideos.length; i++) {
-//     const item = homeSectionItems.hotVideos[i];
-//     console.log("Loaded " + item.title)
-//     const sectionItem = createHomeSectionHotVideosItem(item, i + 1);
-//     hotVideosContent.appendChild(sectionItem);
-// }
-
 
 for (let i=0; i < homeSplitItems.boardGameNews.length; i++) {
     const item = homeSplitItems.boardGameNews[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSplitItem(item);
     bgNewsContent.appendChild(sectionItem);
 
@@ -348,7 +341,7 @@ for (let i=0; i < homeSplitItems.boardGameNews.length; i++) {
 
 for (let i=0; i < homeSplitItems.hotDiscussion.length; i++) {
     const item = homeSplitItems.hotDiscussion[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSplitItem(item);
     discussionContent.appendChild(sectionItem);
 
@@ -361,7 +354,7 @@ for (let i=0; i < homeSplitItems.hotDiscussion.length; i++) {
 
 for (let i=0; i < homeSplitItems.blogs.length; i++) {
     const item = homeSplitItems.blogs[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSplitItem(item);
     blogsContent.appendChild(sectionItem);
 
@@ -374,7 +367,7 @@ for (let i=0; i < homeSplitItems.blogs.length; i++) {
 
 for (let i=0; i < homeSplitItems.forums.length; i++) {
     const item = homeSplitItems.forums[i];
-    console.log("Loaded " + item.title)
+    //console.log("Loaded " + item.title)
     const sectionItem = createHomeSplitItem(item);
     forumsContent.appendChild(sectionItem);
 

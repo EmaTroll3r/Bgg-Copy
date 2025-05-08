@@ -1,6 +1,6 @@
 #main{
     display: flex;
-    margin: calc(20px + var(--nav-height)) 15px 20px 15px;
+    margin: calc(20px + var(--nav-height)) 15px 30px 15px;
     
 }
 
@@ -14,7 +14,7 @@
     margin-right: 10px;
 }
 
-article{
+#game-article{
     border-radius: 6px;
     background-color: white;
     flex-grow: 1;
@@ -834,7 +834,7 @@ article{
     font-size: 0.875rem;
 }
 
-.game-videos-description-tag{
+.game-tag{
     font-size: 0.75rem;
     color: var(--secondary-gray);
     background-color: #e9e9ec;
@@ -843,7 +843,7 @@ article{
     margin-right: 8px;
 }
 
-.game-videos-description-tag:hover{
+.game-tag:hover{
     cursor: pointer;
     text-decoration: none;
     color: white;
@@ -856,20 +856,20 @@ article{
     white-space: nowrap;
 }
 
-.game-videos-description-link:hover{
+.game-permanent-blueLink:hover{
     cursor: pointer;
     text-decoration: none;
     color: var(--blue-link);
 }
 
-.game-videos-description-separator-hr{
+.game-list-description-separator-hr{
     border: 1px solid var(--secondary-gray);
     width: 0px;
     height: 1px;
-    margin: 0px 8px;
+    margin: 0px 5px;
 }
 
-.game-videos-description-icons{
+.game-icons-container{
     display: flex;
     align-items: center;
     height: 15px;
@@ -879,11 +879,11 @@ article{
 }
 
 
-.game-videos-description-icon-number{
+.game-icon-number{
     margin-left: 5px;
 }
 
-.game-videos-description-icons-vertical-hr{
+.game-icons-container-vertical-hr{
     border: 1px solid var(--secondary-gray);
     width: 0px;
     height: 100%;
@@ -896,27 +896,30 @@ article{
     border-radius: 4px;
 }
 
-.game-reviews-section{
+.game-list-section{
     margin-bottom: 30px;
 }
 
-.game-reviews-section-content{
+.game-list-section-content{
     padding-top: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.game-reviews-section-item{
+.game-list-section-item{
     display: flex;
     align-items: center;
-    height: 40px;
 }
 
-.game-reviews-section-item-authorImg{
+.game-list-section-item-authorImg{
     width: 35px;
     height: 35px;
-    margin: 0px 15px 0px 20px;
+    margin-left: 20px;
+}
+
+.game-list-section-item-content{
+    margin-left: 15px;
 }
 
 
@@ -926,17 +929,47 @@ article{
     color: var(--blue-link);
 }
 
-.game-reviews-section-item-wrapper{
+.game-list-section-item-wrapper{
     display: flex;
     align-items: center;
     font-size: 0.875rem;
+    margin-top: 1px;
 }
 
-.game-reviews-section-item-NpublishedReviews[data-game-reviews-section-item-NpublishedReviews]::after{
-    content: "(" attr(data-game-reviews-section-item-NpublishedReviews) " reviews)";
+.game-list-section-item-description{
+    font-size: 0.875rem;
+    margin-top: 1px;
 }
 
-.game-reviews-section-item-hr{
+.game-list-section-item-title-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    width: fit-content;
+}
+
+.game-list-section-item-fileTypeTag{
+    font-family: proxima-nova-bold, Arial, sans-serif;
+    font-size: 0.625rem;
+    text-transform: uppercase;
+    border-radius: 4px;
+    border: 1px solid #888a8c;
+    padding: 0px 3px;
+    height: fit-content;
+}
+
+.game-list-section-item-fileTypeTag:hover{
+    border-color: var(--blue-link);
+}
+
+
+
+.game-list-section-item-NpublishedReviews[data-game-list-section-item-NpublishedReviews]::after{
+    content: "(" attr(data-game-list-section-item-NpublishedReviews) " reviews)";
+}
+
+.game-list-section-item-hr{
     border: 1px solid var(--light-gray);
     width: 100%;
     margin: 7px 0px;
@@ -967,6 +1000,7 @@ article{
     display: flex;
     align-items: center;
     padding: 10px 0px;
+    margin-right: 20px;
     border-bottom: 1px solid var(--light-gray);
 }
 
@@ -991,3 +1025,45 @@ article{
     text-decoration: none;
 }
 
+#game-suggestions-content{
+    margin-bottom: 20px;
+}
+
+#game-expansionsAndlinks-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#game-expansionsAndlinks-container > .game-container{
+    flex-basis: 50%;
+}
+
+.game-expansions-content{
+    font-size: 0.875rem;
+    color: var(--blue-link);
+}
+
+.game-expansions-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.game-expansions-item:hover .game-expansions-item-title{
+    text-decoration: underline;
+    color: var(--primary-blue-link);
+}
+
+.game-expansions-item-number{
+    color: var(--primary-gray);
+}
+
+.game-expansions-item-title{
+    color: var(--blue-link);
+}
+
+.game-expansions-item-hr{
+    border: 1px solid #dfdfe3;
+    width: 100%;
+    margin: 5px 0px;
+}
